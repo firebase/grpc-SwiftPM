@@ -18,7 +18,10 @@
 
 #include <grpc/support/port_platform.h>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wmodule-import-in-extern-c"
 #include "src/core/tsi/ssl/session_cache/ssl_session.h"
+#pragma clang diagnostic pop
 
 #include <grpc/support/log.h>
 

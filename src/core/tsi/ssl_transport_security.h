@@ -25,7 +25,10 @@
 #include "src/core/tsi/transport_security_interface.h"
 
 extern "C" {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wmodule-import-in-extern-c"
 #include <openssl/x509.h>
+#pragma clang diagnostic pop
 }
 
 /* Value for the TSI_CERTIFICATE_TYPE_PEER_PROPERTY property for X509 certs. */

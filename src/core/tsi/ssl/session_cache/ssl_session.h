@@ -26,7 +26,10 @@
 #include <grpc/slice.h>
 
 extern "C" {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wmodule-import-in-extern-c"
 #include <openssl/ssl.h>
+#pragma clang diagnostic pop
 }
 
 #include "src/core/lib/gprpp/ref_counted.h"

@@ -65,7 +65,6 @@ let package = Package(
         .headerSearchPath("third_party/upb/"),
         .headerSearchPath("src/core/ext/upb-generated"),
         .define("GRPC_ARES", to: "0"),
-        .unsafeFlags(["-Wno-module-import-in-extern-c"]),
       ]
     ),
     .target(
@@ -94,7 +93,6 @@ let package = Package(
         .headerSearchPath("include/"),
         .headerSearchPath("third_party/upb/"),
         .headerSearchPath("src/core/ext/upb-generated"),
-        .unsafeFlags(["-Wno-module-import-in-extern-c"]),
       ]
     ),
   ],
