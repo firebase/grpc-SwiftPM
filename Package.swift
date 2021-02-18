@@ -28,7 +28,7 @@ let package = Package(
     ),
     .package(name: "BoringSSL-GRPC",
       url: "https://github.com/firebase/boringssl-SwiftPM.git",
-      from: "0.0.7"
+      .revision("0eeacf67cd12f205d7b747acfa3c8cfb5d4cc518")
     ),
   ],
 
