@@ -24,11 +24,11 @@ let package = Package(
     .package(
       name: "abseil",
       url: "https://github.com/firebase/abseil-cpp-SwiftPM.git",
-      from: "0.20200225.0"
+      .revision("973d27376eedfb8f0f0a324be4b4121d44808dc9")
     ),
     .package(name: "BoringSSL-GRPC",
       url: "https://github.com/firebase/boringssl-SwiftPM.git",
-      from: "0.0.7"
+      .revision("7edd2773f9f9cc292bf9649c3f07286d69b08aee")
     ),
   ],
 
