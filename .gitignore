@@ -151,3 +151,5 @@ BenchmarkDotNet.Artifacts/
 # pyenv config
 .python-version
 
+# SwiftPM build directory
+.swiftpm/

@@ -1,11 +1,7 @@
+This fork is only for Swift Package Manager support for Firestore.
 
+Pull requests here should only be to support Firestore.
 
+Otherwise for the grpc library itself, see https://github.com/grpc/grpc
 
-<!--
-
-Your pull request will be routed to the following person by default for triaging.
-If you know who should review your pull request, please remove the mentioning below.
-
--->
-
-@yashykt
+Thanks!
