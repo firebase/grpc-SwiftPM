@@ -65,6 +65,10 @@ let package = Package(
         .headerSearchPath("third_party/upb/"),
         .headerSearchPath("src/core/ext/upb-generated"),
         .define("GRPC_ARES", to: "0"),
+      ],
+      linkerSettings: [
+        .linkedFramework("CoreFoundation"),
+        .linkedLibrary("z"),
       ]
     ),
     .target(
@@ -94,6 +98,13 @@ let package = Package(
         .headerSearchPath("third_party/upb/"),
         .headerSearchPath("src/core/ext/upb-generated"),
       ]
+    ),
+    .testTarget(
+      name: "build-test",
+      dependencies: [
+        "gRPC-cpp",
+      ],
+      path: "SwiftPMTests/build-test"
     ),
   ],
   cLanguageStandard: .gnu11,
