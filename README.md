@@ -1,3 +1,6 @@
+# DO NOT USE
+This repo is obsolete and Firebase now uses https://github.com/grpc/grpc-ios.git.
+
 # Swift Package Manager copy repository
 
 This repository is a copy of https://github.com/firebase/grpc with
